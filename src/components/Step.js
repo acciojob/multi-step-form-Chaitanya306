@@ -4,21 +4,21 @@ function Step(props) {
   const {step,handlePrev,handlenext}=props  
   const sendComponent = () => {
     if (step === 1) {
-      return(<div>
+      return(<div id='step1'>
         <label htmlFor='first_name'>FirstName:</label><br />
-        <input type='text'  id="first_name"/><br />
+        <input type='text'  id="first_name" name = "firstName"/><br />
         <label htmlFor='last_name'>FirstName:</label><br />
-        <input type='text'  id="last_name"/><br />
+        <input type='text'  id="last_name" name = "lastName"/><br />
       </div>)
     } else if (step === 2) {
-      return(<div>
+      return(<div id='step2'>
         <label htmlFor="model">Model:</label><br />
-        <input type='text'  id="model"/><br />
+        <input type='text'  id="model" /><br />
         <label htmlFor='car_price'>Price:</label><br />
         <input type='number'  id="car_price"/><br />
       </div>)
     } else if (step === 3) {
-      return(<div>
+      return(<div id='step3'>
         <label htmlFor="card_info">Card Number:</label><br />
         <input type='number'  id="card_info" /><br />
         <label htmlFor='expiry_date'>expiry_date:</label><br />
